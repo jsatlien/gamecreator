@@ -20,5 +20,5 @@ const assert = chai.assert;
       let newGame = new Game (1, 3);
       expect(newGame).to.be.an.instanceof(Game);
 
-    })
+    });
   });

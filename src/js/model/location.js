@@ -8,6 +8,10 @@ class Location {
   this.adjacent = adjacentArray;
   this.id = id;
   }
+  changeLocation(id) {
+
+
+  }
 };
 
 

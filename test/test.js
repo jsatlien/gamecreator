@@ -13,7 +13,7 @@ const assert = chai.assert;
 
     it('should be a place made with class Location', function () {
       let cave = new Location ('forest', [1,2,3], 1);
-      expect(cave).to.be.an.instanceof(Object);
+      expect(cave).to.be.an.instanceof(Location);
     });
 
   });

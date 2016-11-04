@@ -1,7 +1,7 @@
 // Import Chai
 import chai from 'chai';
 
-import { Location } from '../src/js/model/location.js'
+import { Location, Game } from '../src/js/model/location.js'
 // Import Any Files to Test
 
 // Set Chai Constants
@@ -16,4 +16,9 @@ const assert = chai.assert;
       expect(cave).to.be.an.instanceof(Location);
     });
 
+    it('should correctly load the Game class', function () {
+      let newGame = new Game (1, 3);
+      expect(newGame).to.be.an.instanceof(Game);
+
+    })
   });

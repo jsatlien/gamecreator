@@ -31,4 +31,4 @@ class Location {
 // write a function that changes
 
 
-export { Location };
+export { Location, Game };

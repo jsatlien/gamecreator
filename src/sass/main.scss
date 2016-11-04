@@ -7,6 +7,11 @@
   width: 900px;
   margin: 30px auto;
   border: 1px solid black;
+  overflow: hidden;
+  img {
+    height: 700px;
+    max-width: 1000px;
+  }
 }
 
 .text-display {

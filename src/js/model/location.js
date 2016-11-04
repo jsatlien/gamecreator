@@ -1,10 +1,14 @@
+import $ from 'jquery';
+import _ from 'lodash';
 
 
-
-class Location (previous, adjacentArray, current) {
-  constructor (
+class Location {
+  constructor (previous, adjacentArray, id) {
   this.previous = previous;
   this.adjacent = adjacentArray;
-  this.current = current;
-  )
+  this.id = id;
+  }
 };
+
+
+export { Location };

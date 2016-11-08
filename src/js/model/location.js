@@ -1,35 +1,24 @@
 import $ from 'jquery';
 import _ from 'lodash';
 
+import { Choices } from './choices.js'
 
-class Game {
-  constructor (currentLocation, reverseCount, ) {
-      this.currentLocation = currentLocation || 0;
-      this.playerAlive = true || false;
-      this.reverseCount = reverseCount || 0;
-      // reverseCount is the number of times a player can choose to go back
-      // to the previous location.
-  }
-  changeLocation() {
-      // $('#make-decision').click()
-  }
-}
 
 class Location {
-  constructor (name, previous, adjacentArray, id, imageUrl) {
+  constructor (name, previous, adjacentArray, id, imageUrl, choices) {
     this.name = name;
     this.previous = previous;
     this.adjacent = adjacentArray;
     this.id = id;
     this.imageUrl = imageUrl;
+    this.choiceList = new Choices (choices);
   }
 
   updateDisplay() {
       $('#game-display').html(`<img src="${this.imageUrl}" alt="Image Not Found"/>`)
   }
+
+
 };
 
-// write a function that changes
-
-
-export { Location, Game };
+export { Location };

@@ -1,24 +1,12 @@
-import $ from 'jquery';
-import _ from 'lodash';
-
-import { Choices } from './choices.js'
-
 
 class Location {
-  constructor (name, previous, adjacentArray, id, imageUrl, choices) {
-    this.name = name;
-    this.previous = previous;
-    this.adjacent = adjacentArray;
+  constructor (id, name, description, imageUrl, adjacent) {
     this.id = id;
+    this.name = name;
+    this.description = description;
     this.imageUrl = imageUrl;
-    this.choiceList = new Choices (choices);
+    this.adjacent = adjacent;
   }
-
-  updateDisplay() {
-      $('#game-display').html(`<img src="${this.imageUrl}" alt="Image Not Found"/>`)
-  }
-
-
-};
+}
 
 export { Location };

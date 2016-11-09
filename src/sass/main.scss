@@ -6,30 +6,34 @@
   height: 600px;
   width: 900px;
   margin: 30px auto;
-  border: 1px solid black;
+  // border: 1px solid black;
   overflow: hidden;
+  text-align: center;
   img {
     height: 700px;
+    width: auto;
     max-width: 1000px;
+    margin: 0px auto;
+
   }
 }
 
 .text-display {
   display: flex;
-  height: 200px;
+  min-height: 200px;
+  max-height: 800px;
   width: 500px;
   margin: 0px auto;
   border: 1px solid grey;
   padding: 10px;
-  align-items: flex-end;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
+  align-items: flex-start;
+  // justify-content: center;
+  // flex-wrap: wrap;
 }
 
 #choose {
+  align-self: flext-start;
   display: block;
   height: 30px;
   width: 100px;
-  text-align:center;
 }

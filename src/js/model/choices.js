@@ -2,17 +2,10 @@ import $ from 'jquery';
 import _ from 'lodash';
 
 class Choices {
-  // Takes an object
-  constructor() {
-    this.option1 = choices.option1
-    this.option2 = choices.option2
-    this.option3 = choices.option3
-  }
-  loadOptions() {
-
-  }
-  makeDecision() {
-
+  constructor(option1, option2, option3) {
+    this.choice1 = option1;
+    this.choice2= option2;
+    this.choice3 = option3;
   }
 
 }
